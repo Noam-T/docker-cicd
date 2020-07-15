@@ -1,5 +1,6 @@
 node {
    def commit_id
+   tool name: 'docker', type: 'dockerTool'
    stage('step a') {
      checkout scm
      sh "git rev-parse --short HEAD > .git/commit-id"                        
